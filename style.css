@@ -1,0 +1,130 @@
+/*Variables in Sass are intialized by $variableName these are accesible globally */
+.Logo {
+  width: 550;
+  height: 80;
+}
+
+p{
+  font-family: Verdana;
+  color: white;
+  font-size: 14px;
+}
+
+.info {
+  font-family: Verdana;
+  color: white;
+    flex-wrap: wrap;
+  word-wrap: break-word;
+  font-size: 11px; 
+}
+
+table {
+  background-color: #1a1a1d;
+}
+
+.enlarge {
+  width: 140px;
+  height: 200px;
+  padding: 4px;
+  -webkit-transition-property: font-size;
+  transition-property: font-size;
+  -webkit-transition-duration: 4s;
+          transition-duration: 4s;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+}
+
+.enlarge:hover {
+  width: 150px;
+  height: 210px;
+}
+
+.info-page {
+  background-color: #1a1a1d;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}
+
+.homebtn {
+  background-color:61892f;
+  color: white;
+  width: 110px;
+  height:50px;
+}
+
+.btn {
+  background-color:61892f;
+  color: white;
+}
+
+.sidepane {
+  background-color: #303033;
+  width: 200px;
+  height: 10px
+}
+
+.rightpane{
+  height:350px;
+  width:650px;
+  background-color:#303033;
+
+}
+
+.primary1{
+  text-align: justify;
+  color:#61892f;
+}
+
+.primary2 {
+
+  background-color:#303033;
+  color: white;
+}
+
+.txtalign {
+  text-align: justify;
+  position: relative;
+  color:#61892f;
+  font-size: 28px;
+  left: 20px;
+  top:-120px;
+}
+
+.subtxtalign {
+  text-align: justify;
+  position: relative;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  color:#fff;
+  font-size: 14px;
+  left: 20px;
+  top:-100px;
+}
+
+footer {
+  width:1000px;
+}
+
+.critic_rating{
+  text-align: justify;
+  position: relative;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  color:#fff;
+  font-size: 14px;
+  left: 20px;
+  top: -5px;
+}
+
+
+.fan_rating{
+  text-align: justify;
+  position: relative;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+  color:#fff;
+  font-size: 14px;
+  left: -30px;
+  top: -5px;
+}

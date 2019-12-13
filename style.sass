@@ -1,0 +1,46 @@
+//Variables 
+/*Variables in Sass are intialized by $variableName these are accesible globally */
+$LogoFont : Tahoma;
+$mainFont : Verdana;
+$PrimaryColor1 : #505761;
+$Text: white;
+
+//Logo Class
+.Logo 
+    width: 550 
+    height: 80
+
+//Standard for all fonts
+p 
+    font-family: $mainFont;
+    color: $Text
+    font-size: 14px;
+
+//The New Release Table
+table
+ background-color: #99a0a8
+
+//Enlarging Image Function
+.enlarge
+  width: 140px
+  height: 200px
+  padding: 4px
+  transition:
+    property: font-size
+    duration: 4s
+    delay: 2s
+
+  &:hover
+    width: 220px
+    height: 300px
+
+//Body Class
+.info-page
+  background-color: $PrimaryColor1
+  margin: auto
+    bottom: 10px
+    top: 2px
+
+.button
+  border: 1px solid black
+  border-radius: if($rounded-corners, 5px, null)
