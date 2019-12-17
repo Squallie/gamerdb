@@ -12,7 +12,7 @@ let db = new sqlite3.Database('./Games.db', err => {
         return console.error("Unable to connect");
     }
     //Returns log to state conenction success.
-    console.log("Connected to DB Successfully\n");
+    console.log("Connected to GamerDB Successfully\n");
 });
 
 
@@ -70,7 +70,7 @@ db.all(Xbox_360, [] ,(err, rows) => {
     });
 });
 
-//Search list for Game
+/*Search list for Game
 let search = 'SELECT Title tile FROM Games ORDER BY name';
 
 db.all(search, [], (err, rows) => {
@@ -80,7 +80,7 @@ db.all(search, [], (err, rows) => {
     rows.forEach((row) => {
         console.log(row.name);
     });
-});
+});*/
 
 
 

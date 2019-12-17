@@ -4,7 +4,7 @@ console.log(msg);
 
 //Importing files
 var server = require('./server.js');
-var gamedb = require('./dbcontrol.js');
+var gamedb = require('./gameDB.js');
 
 // | Modules |
 

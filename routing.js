@@ -16,6 +16,11 @@ app.get(`/Game_Archive`, function(req, res){
 });
 
 //Route and Template for game
+app.get('/Login', function(req,res){
+  res.sendfile(`./public/login.html`);
+ }); 
+
+//Route and Template for game
 app.get(`/Death_Stranding`, function(req,res){
  res.sendfile(`./public/${GameTitle}.html`);
 }); 

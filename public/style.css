@@ -77,10 +77,14 @@ table {
 }
 
 .primary2 {
-
   background-color:#303033;
   color: white;
 }
+
+.primary3 {
+  color: white;
+}
+
 
 .txtalign {
   text-align: justify;
