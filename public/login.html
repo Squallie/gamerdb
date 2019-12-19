@@ -60,19 +60,15 @@
     </td>
     <tr>
     <td>
-        <form>
+        <form action ="auth" method="POST">
         <div class="form-group">
-         <label class="primary3" for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+         <label class="primary3" for="username">Username</label>
+            <input type="text" class="form-control" name="username" placeholder="Username">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-         <label class="primary3" for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="primary3" class="form-check-label" for="exampleCheck1">Keep me logged in</label>
+         <label class="primary3" for="password">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Password">
         </div>
             <button type="submit" class="btn btn-btn">Submit</button>
         </form>

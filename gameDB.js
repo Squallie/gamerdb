@@ -2,7 +2,9 @@
 
 //Adds module for Sqlite3
 const sqlite3 = require('sqlite3').verbose();
-
+const express = require('express')
+const app = express()
+const router = express.Router();
 
 /*Creating Database Object */
 //Selects the Database to connect to.
@@ -70,17 +72,21 @@ db.all(Xbox_360, [] ,(err, rows) => {
     });
 });
 
-/*Search list for Game
-let search = 'SELECT Title tile FROM Games ORDER BY name';
+//Search
+router.post('search/game', function(req,res, next){
 
-db.all(search, [], (err, rows) => {
-    if(err){
-        throw err;
-    }
-    rows.forEach((row) => {
-        console.log(row.name);
-    });
-});*/
+    var gameName = req.body.gameName;
+    console.log(gameName);
+    res.redirect('/search');
+
+});
+
+router.get('search/game', function(req,res, next){
+    var gameName;
+    gameName = req.params.gameName;
+    db.select('SELECT * FROM Title title');
+
+});
 
 
 

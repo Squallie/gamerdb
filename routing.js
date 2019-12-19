@@ -7,26 +7,23 @@ let GameTitle = "Death_Stranding"
 //Establishes folder for static docs
 app.use(express.static('public'))
 
+// - Index page
 //Index page
-app.get('/home', (req, res) => res.render('index.html'))
+app.get('/', (req, res) => res.sendFile(__dirname+'index.html'))
 
-//Navbar - Games Tab
+// - Navbar - Games Tab
 app.get(`/Game_Archive`, function(req, res){
   res.sendfile(`./public/GameList.html`);
 });
 
-//Route and Template for game
-app.get('/Login', function(req,res){
+//-Login Page 
+app.get(`/login`, function(req, res){
   res.sendfile(`./public/login.html`);
- }); 
+});
 
-//Route and Template for game
+//-- Route and Template for a game
 app.get(`/Death_Stranding`, function(req,res){
  res.sendfile(`./public/${GameTitle}.html`);
 }); 
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
-
-/*To do List
- *Need to find a way to make app get dynamically find   the path 
- */
