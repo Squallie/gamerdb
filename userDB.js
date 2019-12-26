@@ -5,8 +5,10 @@ const app = express()
 //Adds module for Sqlite3
 const sqlite3 = require('sqlite3').verbose();
 
-//Creating Database Object //
+//Importing passportjs
+const passport = require('./passport.js')
 
+//Creating Database Object //
 //Selects the Database to connect to.
 let db = new sqlite3.Database('./Users.db', err => {
     if (err){
@@ -17,7 +19,19 @@ let db = new sqlite3.Database('./Users.db', err => {
     console.log("Connected to UserDB Successfully\n");
 });
 
+let sql = 'SELECT Username username, Password password FROM Users'
 
+/*Query Data
+needs to be fixed up
+db.get(sql, [Username], (err, rows) => {
+	if(err) {
+		return console.error(err.message);
+	}
+	return row
+	? console.log(row.username)
+	: console.log(`User ${Username} does not exist`)
+});
+*/
 
 /*Checking login OLD METHOD
 app.post('/auth', function(request, response) {
